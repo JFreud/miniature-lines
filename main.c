@@ -28,7 +28,6 @@ int main() {
   //
   draw_line(250, 0, 250, 500, s, c); //vertical
   draw_line(0, 250, 500, 250, s, c); //horizontal
-  //
   draw_line(0, 0, 500, 500, s, c); //slope 1
   draw_line(0, 500, 500, 0, s, c); //slope -1
 
@@ -43,8 +42,8 @@ int main() {
     int start_x = rand() % 500;
     int start_y = rand() % 500;
 
-    printf("start x: %d\n", start_x);
-    printf("start y: %d\n", start_y);
+    // printf("start x: %d\n", start_x);
+    // printf("start y: %d\n", start_y);
 
     int length_x = rand() % 100 - 50;
 
@@ -52,7 +51,7 @@ int main() {
 
     draw_line(start_x, start_y, start_x + length_x, start_y + length_y, s, c);
     count++;
-    printf("%d\n", count);
+    // printf("%d\n", count);
   }
 
   // draw_line(400, 300, 30, 30, s, c);
